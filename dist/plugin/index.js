@@ -1,4 +1,4 @@
-import k from "/home/xi/Repo/fictif/node_modules/unplugin-vue-markdown/dist/vite.js";
+import k from "unplugin-vue-markdown/vite";
 import F from "markdown-it-mathjax3";
 import c from "node:path";
 import I from "fast-glob";
