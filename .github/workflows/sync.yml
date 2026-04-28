@@ -1,13 +1,14 @@
-name: Verify Build
+name: Build and Sync
 
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  build-and-sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,3 +24,10 @@ jobs:
 
       - name: Build
         run: bun run build
+
+      - name: Commit dist back to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: sync production build [skip ci]"
+          file_pattern: 'dist/*'
+
