@@ -1,12 +1,12 @@
 {
-  "name": "fictif",
+  "name": "xipid/fictif",
   "version": "0.0.1",
   "description": "The modern, hybrid framework for Vue 3.",
   "author": "Abderrahmene Merzoug",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fictifhq/fictif.git"
+    "url": "https://github.com/xipid/fictif.git"
   },
   "keywords": [
     "vue",
