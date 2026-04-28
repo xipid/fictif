@@ -31,3 +31,4 @@ jobs:
           commit_message: "chore: sync production build [skip ci]"
           file_pattern: 'dist/**'
           add_options: '-f'
+          push_options: '--force'
